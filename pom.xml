@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.suyh</groupId>
+    <artifactId>java-demo-springboot-10-niche</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+
+    <modules>
+        <module>demo-27-activiti-01</module>
+        <module>demo-27-activiti-02</module>
+        <module>demo-32-es-01</module>
+        <module>demo-32-es-02</module>
+        <module>demo-36-01-listener-springboot-24-pre</module>
+        <module>demo-36-02-listener-springboot-24-post</module>
+        <module>demo-37-01-stop-springboot</module>
+        <module>demo-39-nacos-01-discovery</module>
+        <module>demo-39-nacos-02-registry</module>
+        <module>demo-39-nacos-03-listener</module>
+        <module>demo-40-sentinel-01-nacos-datasource</module>
+        <module>demo-40-sentinel-02-spring-boot-web</module>
+        <module>demo-45-cxf-sentinel-01</module>
+        <module>demo-49-01-active-spring-boot-24-post</module>
+        <module>demo-51-01-bean-dynamic</module>
+        <module>demo-52-01-prometheus</module>
+        <module>demo-54-01-javassist</module>
+        <module>demo-55-01-websocket-echo</module>
+        <module>demo-55-04-websocket</module>
+    </modules>
+
+
+
+</project>
