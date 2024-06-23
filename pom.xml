@@ -29,6 +29,8 @@
         <module>demo-39-nacos-03-listener</module>
         <module>demo-40-sentinel-01-nacos-datasource</module>
         <module>demo-40-sentinel-02-spring-boot-web</module>
+        <module>demo-41-bean-exclude-01</module>
+        <module>demo-43-web-redirect-01</module>
         <module>demo-45-cxf-sentinel-01</module>
         <module>demo-49-01-active-spring-boot-24-post</module>
         <module>demo-51-01-bean-dynamic</module>
