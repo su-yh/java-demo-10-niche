@@ -9,14 +9,14 @@
     <artifactId>demo-cxf</artifactId>
 
     <packaging>pom</packaging>
-    <modules>
-        <module>demo-jax-ws</module>
-        <module>demo-jax-rs</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <modules>
+        <module>demo-jax-ws</module>
+        <module>demo-jax-rs</module>
+    </modules>
 </project>
