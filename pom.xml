@@ -24,8 +24,8 @@
         <module>demo-27-activiti-01</module>
         <module>demo-27-activiti-02</module>
         <module>demo-31-async-01</module>
-        <module>demo-32-es-01</module>
-        <module>demo-32-es-02</module>
+<!--        <module>demo-32-es-01</module>-->
+<!--        <module>demo-32-es-02</module>-->
         <module>demo-35-aware-01</module>
 <!--        <module>demo-36-01-listener-springboot-24-pre</module>-->
         <module>demo-36-02-listener-springboot-24-post</module>

@@ -2,7 +2,7 @@
 package com.suyh3903.nacos;
 
 import com.alibaba.nacos.api.exception.NacosException;
-import com.suyh.utils.JsonUtil;
+import com.suyh3903.util.JsonUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
