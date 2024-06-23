@@ -6,7 +6,7 @@
     <groupId>com.suyh</groupId>
     <version>1.0-SNAPSHOT</version>
 
-    <artifactId>demo-cxf</artifactId>
+    <artifactId>demo-45-cxf</artifactId>
 
     <packaging>pom</packaging>
 

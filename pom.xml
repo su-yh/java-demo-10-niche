@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.suyh</groupId>
-    <artifactId>java-demo-springboot-10-niche</artifactId>
+    <artifactId>java-demo-10-niche</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
@@ -27,7 +27,7 @@
         <module>demo-32-es-01</module>
         <module>demo-32-es-02</module>
         <module>demo-35-aware-01</module>
-        <module>demo-36-01-listener-springboot-24-pre</module>
+<!--        <module>demo-36-01-listener-springboot-24-pre</module>-->
         <module>demo-36-02-listener-springboot-24-post</module>
         <module>demo-37-01-stop-springboot</module>
         <module>demo-39-nacos-01-discovery</module>
@@ -37,7 +37,7 @@
         <module>demo-40-sentinel-02-spring-boot-web</module>
         <module>demo-41-bean-exclude-01</module>
         <module>demo-43-web-redirect-01</module>
-        <module>demo-45-cxf</module>
+<!--        <module>demo-45-cxf</module>-->
         <module>demo-49-01-active-spring-boot-24-post</module>
         <module>demo-51-01-bean-dynamic</module>
         <module>demo-52-01-prometheus</module>
