@@ -83,6 +83,10 @@ public class JavassistCompiler {
         invokeInstance(ctClass);
     }
 
+    private static void resetClassMethod(ClassPool pool) {
+
+    }
+
     private static CtClass genericClass(ClassPool pool) throws NotFoundException, CannotCompileException, IOException {
         CtClass ctClass = pool.makeClass("com.abc.Person");
 
