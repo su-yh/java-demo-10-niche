@@ -2,7 +2,7 @@
 package com.suyh3903.nacos;
 
 import com.alibaba.nacos.api.exception.NacosException;
-import com.suyh3903.util.JsonUtil;
+import com.suyh3903.util.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -30,7 +30,7 @@ public class DegradeRuleNacos extends AbstractNacosDynamic<List<DegradeRuleEntit
 
         @Override
         protected void updateConfigValue(String value) {
-            List<DegradeRuleEntity> tempValue = JsonUtil.deserializeToList(value, DegradeRuleEntity.class);
+            List<DegradeRuleEntity> tempValue = JsonUtils.deserializeToList(value, DegradeRuleEntity.class);
             configValue = tempValue == null ? new ArrayList<>() : tempValue;
         }
 

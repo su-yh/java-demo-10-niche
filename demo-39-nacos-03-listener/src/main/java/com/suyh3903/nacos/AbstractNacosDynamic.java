@@ -3,7 +3,7 @@ package com.suyh3903.nacos;
 import com.alibaba.nacos.api.config.ConfigService;
 import com.alibaba.nacos.api.config.listener.Listener;
 import com.alibaba.nacos.api.exception.NacosException;
-import com.suyh3903.util.JsonUtil;
+import com.suyh3903.util.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
@@ -131,7 +131,7 @@ public abstract class AbstractNacosDynamic<T> {
         public boolean publish(T configObject) {
             try {
                 publicLock.lock();
-                String configValue = JsonUtil.serializable(configObject);
+                String configValue = JsonUtils.serializable(configObject);
                 if (configValue == null) {
                     configValue = emptyConfigValue();
                 }

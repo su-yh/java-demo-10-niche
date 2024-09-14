@@ -86,11 +86,11 @@ public class JsonUtils {
      * @param <T>   泛型
      * @return 返回List 对象
      */
-    public static <T> List<T> deserializeToList(String json, Class<T> clazz) {
-       return deserializeToList(json, clazz, OBJECT_MAPPER);
+    public static <T> T[] deserializeToArray(String json, Class<T> clazz) {
+       return deserializeToArray(json, clazz, OBJECT_MAPPER);
     }
 
-    public static <T> List<T> deserializeToList(String json, Class<T> clazz, ObjectMapper mapper) {
+    public static <T> T[] deserializeToArray(String json, Class<T> clazz, ObjectMapper mapper) {
         try {
             ArrayType arrayType = mapper.getTypeFactory().constructArrayType(clazz);
             return mapper.readValue(json, arrayType);
@@ -101,15 +101,15 @@ public class JsonUtils {
         return null;
     }
 
-    public static <T> List<T> deserializeToList02(String json, Class<T> clazz) {
+    public static <T> List<T> deserializeToList(String json, Class<T> clazz) {
         if (!StringUtils.hasText(json)) {
             return Collections.emptyList();
         } else {
-            return deserializeToList02(json, clazz, OBJECT_MAPPER);
+            return deserializeToList(json, clazz, OBJECT_MAPPER);
         }
     }
 
-    public static <T> List<T> deserializeToList02(String json, Class<T> clazz, ObjectMapper mapper) {
+    public static <T> List<T> deserializeToList(String json, Class<T> clazz, ObjectMapper mapper) {
         try {
             JavaType javaType = mapper.getTypeFactory()
                     .constructParametricType(List.class, clazz);
