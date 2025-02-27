@@ -28,9 +28,11 @@ public class BizStringArrayDeserializer {
     private static void rebuildCustomStringArrayDeserializer()
             throws NotFoundException, CannotCompileException, InstantiationException, IllegalAccessException {
         ClassPool classPool = BizClassPoll.getDefault();
+        // 这里要注意一下，不能偷懒，直接使用 StringArrayDeserializer.class.getName() 来得到类名。
+        // 因为这样编译器就会去加载这个类，我们就没法再次修改这个类了。
         CtClass ctClass = classPool.get("com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer");
 
-        // 获取参数类型
+        // 获取方法参数类型列表
         CtClass jsonParserClass = classPool.get("com.fasterxml.jackson.core.JsonParser");
         CtClass deserializationContextClass = classPool.get("com.fasterxml.jackson.databind.DeserializationContext");
         CtClass stringArrayCtClass = classPool.get("java.lang.String[]");
@@ -38,6 +40,7 @@ public class BizStringArrayDeserializer {
         // 获取带有指定参数类型的重载方法
         CtMethod ctMethod = ctClass.getDeclaredMethod("_deserializeCustom", params);
 
+        // 在方法体里面访问方法参数，需要使用 $1, $2 ... 来代替
         String body = "    {\n" +
                 "        final ObjectBuffer buffer = $2.leaseObjectBuffer();\n" +
                 "        int ix;\n" +
